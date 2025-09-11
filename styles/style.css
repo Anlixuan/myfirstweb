@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 28px;
+  background-color: #ffe6ea; /* 淡粉色背景，满足视觉需求 */
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #d85e83;
+}
+
+p,
+li {
+    font-size: 24px; /* 这里可以根据需要修改字体大小，比如改为18px等 */
+}
+
+/* 标题字号与居中设置：h1居中+28px，下级标题依次递减 */
+h1 {
+  text-align: center;
+  font-size: 64px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+/* 图片样式：确保所有图片自适应且带圆角 */
+.profile-img,
+.song-img,
+.qrcode-img,
+.qq-qrcode {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 音频播放器样式：保留原有粉色背景，优化显示 */
+.audio-player {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fce4ec;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* 二维码弹窗样式：确保动画流畅且居中 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #fce4ec;
+  width: 50%;
+  max-width: 400px; /* 限制弹窗最大宽度，适配小屏幕 */
+  border-radius: 8px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  text-align: center; /* 二维码居中显示 */
+}
+
+/* 二维码图片优化：避免过大 */
+.qq-qrcode {
+  max-width: 250px;
+  margin: 10px auto;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+}
+
+/* 关闭按钮样式：优化hover效果 */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #d85e83; /*  hover时变为主题粉色，呼应整体风格 */
+}
