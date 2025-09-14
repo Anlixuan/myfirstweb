@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
@@ -8,49 +8,97 @@
   </head>
 
   <body>
-        <h1>个人简介</h1>
-            <img src="/myfirstweb/images/my-image.jpg" class="profile-img" alt="这是一个爱笑的女孩" title="点击一下有反转"/>
-        <h2>基本信息</h2>
-          <ul>
-              <li>姓名：陈一萱</li>
-              <li>年龄：19</li>
-              <li>学校：南华大学</li>
-              <li>年级：2023级</li>
-              <li>专业：数据科学与大数据技术</li>
-              <li>班级：本23数据03班</li>
-              <li>家乡：湖南永州</li>
-          </ul>
-        <h2>任职经历</h2>
-          <ol>
-              <li>2023.09-2023.10，任本23数据03班军训负责人</li>
-              <li>2023.09-2024.06，任计算机学院团委组织部干事</li>
-              <li>2024.09-2025.06，任计算机学院团委组织部副部长</li>
-              <li>2023.10-至今，任本23数据03班班长</li>
-          </ol>
-        <h2>推荐歌曲</h2>
-          <h3>《NO.1——南波万》</h3>
-            <img src="/myfirstweb/images/cb5a5267f0e5a0615db2145358550d44.jpg" class="song-img" alt="《NO.1-南波万》歌曲封面">
-            <p>《NO.1——南波万》，系<a href="https://baike.baidu.com/item/%E6%98%8E%E6%98%9F%E5%A4%A7%E4%BE%A6%E6%8E%A2%E4%B9%8B%E5%90%8D%E4%BE%A6%E6%8E%A2%E5%AD%A6%E9%99%A2/50051168?fromModule=lemma_inlink">综艺《明星大侦探之名侦探学院》主题曲</a>
-            ，由胡继沿作曲，陆虎担任音乐指导，<a href="https://baike.baidu.com/item/%E8%92%B2%E7%86%A0%E6%98%9F/13206421?fromModule=lemma_inlink">蒲熠星</a>、周峻纬、唐九洲、齐思钧、郭文韬（文韬）、邵明明和石凯作词并演唱，于2020年6月3日发行。</p>
-            
-            <p>该曲是2020年5月28日播出的《明星大侦探之名侦探学院第二季》学员合宿中，在陆虎的指导下，由蒲熠星、周峻纬、唐九洲、齐思钧、郭文韬（文韬）、邵明明和石凯作词并演唱，并以此作为综艺《明星大侦探之名侦探学院》主题曲。</p>
-            
-            <p>《NO.1——南波万》这首歌曲曲风轻快，歌词描述了关于成长、关于青春的故事，凝聚了他们对于美好生活的向往，鼓励听众能通过歌曲找到生活的价值和意义。</p>
-          <!-- 音频播放器 -->
-          <div class="audio-player">
-            <audio controls>
-              <source src="/myfirstweb/audio/NO.1——南波万.mp3" type="audio/mpeg"/>
-            </audio>
-          </div>
+    <h1>个人简介</h1>
+    <img src="/myfirstweb/images/my-image.jpg" class="profile-img" alt="这是一个爱笑的女孩" title="点击一下有反转"/>
+    <h2>基本信息</h2>
+    <ul>
+      <li>姓名：陈一萱</li>
+      <li>年龄：19</li>
+      <li>学校：南华大学</li>
+      <li>年级：2023级</li>
+      <li>专业：数据科学与大数据技术</li>
+      <li>班级：本23数据03班</li>
+      <li>家乡：湖南永州</li>
+    </ul>
 
-        <h2>联系方式</h2>
-         <p>QQ号:3465546749 <button id="showQqBtn">查看QQ二维码</button></p>
-         <div id="qqModal" class="modal">
-          <div class="modal-content">
-            <span class="close-btn">&times;</span> <!-- 关闭按钮 -->
-            <img src="/myfirstweb/images/qq二维码.jpg" class="qq-qrcode" alt="QQ二维码" /> <!-- 匹配CSS的 .qq-qrcode 类 -->
-          </div>
+    <h2>任职经历</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2023.10-至今</div>
+        <div class="timeline-content">
+          <h4>本23数据03班 军训负责人</h4>
+          <p>• 在军训期间负责暂时管理班级事务，引导班级成员尽快熟络，适应大学生活</p>
         </div>
-        <script src="/myfirstweb/scripts/script.js"></script>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2023.09-2024.06</div>
+        <div class="timeline-content">
+          <h4>计算机学院团委组织部 干事</h4>
+          <p>• 协助组织部干部完成部门相关基础工作</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2024.09-2025.06</div>
+        <div class="timeline-content">
+          <h4>计算机学院团委组织部 副部长</h4>
+          <p>• 负责组织部主题团日相关事务，每月统计团支部主题团日开展情况</p>
+          <p>• 负责发展团员相关工作，为团组织吸纳更多新鲜血液</p>
+        </div>
+      </div>
+        <div class="timeline-item">
+            <div class="timeline-date">2023.10-至今</div>
+            <div class="timeline-content">
+            <h4>本23数据03班 班长</h4>
+            <p>• 负责班级日常事务管理，协调同学关系，组织班级活动</p>
+            <p>• 作为班级与老师、学校沟通的桥梁，传达学校和老师的各项通知和要求</p>
+            </div>  
+    </div>
+
+    <h2>个人事迹简介</h2>
+    <p>
+        本人从步入大学开始担任军训负责人到成为一班之长再到加入计算机学院团委组织部成为一名干事，最后拥有一段任职计算机学院团委组织部副部长的经历。本人一直在努力提高自我能力，以自我的全面发展为努力的方向，为实现人生自我价值打下基础。
+        在思想上，我勇于接受新的思想和新的观点，积极进取，坚决拥护党的领导，具有良好的思想素质。目前经过党组织的教育学习已经成为了一名入党积极分子并被评为入党积极分子培训优秀学员。
+        在工作中，我对待事务认真负责，严于律己，拥有较强的语言沟通能力和组织领导能力，能够按时高效率完成任务。
+        在学习上，我高要求自己，认真对待各科学习任务，努力学习专业知识和课外知识，凭借自己对知识的渴望与追求，具备了一定的自学能力和综合分析能力，并在大一综测中取得了优异成绩。
+        在生活上，我积极乐观，助人为乐，与人为善，和同学相处融洽。我也积极参加学院的各项活动，如志愿服务、文体活动、社会实践活动等，从中锻炼了自己的组织能力、沟通能力和领导能力，也增强了团队合作精神和服务意识。
+        未来我会继续努力，争取在各方面取得更大的进步。
+    </p>
+    <h2>推荐歌曲</h2>
+    <h3>《NO.1——南波万》</h3>
+    <img src="/myfirstweb/images/cb5a5267f0e5a0615db2145358550d44.jpg" class="song-img" alt="《NO.1-南波万》歌曲封面">
+    <p>
+      《NO.1——南波万》，系<a
+        href="https://baike.baidu.com/item/%E6%98%8E%E6%98%9F%E5%A4%A7%E4%BE%A6%E6%8E%A2%E4%B9%8B%E5%90%8D%E4%BE%A6%E6%8E%A2%E5%AD%A6%E9%99%A2/50051168?fromModule=lemma_inlink"
+        >综艺《明星大侦探之名侦探学院》主题曲</a
+      >
+      ，由胡继沿作曲，陆虎担任音乐指导，<a
+        href="https://baike.baidu.com/item/%E8%92%B2%E7%86%A0%E6%98%9F/13206421?fromModule=lemma_inlink"
+        >蒲熠星</a
+      >、周峻纬、唐九洲、齐思钧、郭文韬（文韬）、邵明明和石凯作词并演唱，于2020年6月3日发行。
+    </p>
+
+    <p>
+      该曲是2020年5月28日播出的《明星大侦探之名侦探学院第二季》学员合宿中，在陆虎的指导下，由蒲熠星、周峻纬、唐九洲、齐思钧、郭文韬（文韬）、邵明明和石凯作词并演唱，并以此作为综艺《明星大侦探之名侦探学院》主题曲。
+    </p>
+
+    <p>
+      《NO.1——南波万》这首歌曲曲风轻快，歌词描述了关于成长、关于青春的故事，凝聚了他们对于美好生活的向往，鼓励听众能通过歌曲找到生活的价值和意义。
+    </p>
+  
+    <div class="audio-player">
+      <audio controls>
+        <source src="/myfirstweb/audio/NO.1——南波万.mp3" type="audio/mpeg"/>
+      </audio>
+    </div>
+
+    <h2>联系方式</h2>
+    <p>QQ号:3465546749 <button id="showQqBtn">查看QQ二维码</button></p>
+    <div id="qqModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img src="/myfirstweb/images/qq二维码.jpg" class="qq-qrcode" alt="QQ二维码" />
+      </div>
+    </div>
+    <script src="/myfirstweb/scripts/script.js"></script>
   </body>
 </html>
